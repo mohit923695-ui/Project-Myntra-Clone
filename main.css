@@ -1,9 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-size: Assitant,-apple-system,BlinkMacSystemFont,Seoge UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-    header{
+
+header {
     display: flex;
     background-color: #ffffff;
     height: 80px;
@@ -11,21 +13,23 @@
     align-items: center;
     border-bottom: 1px solid #b6b1b1;
 }
-.myntra_home{
+
+.myntra_home {
     height: 45px;
+    display: block;
 }
-.logo_container{
+
+.logo_container {
     margin-left: 4%;
 }
-.action_bar{
-    margin-right: 4%;
-}
-.nav_bar{
+
+.nav_bar {
     display: flex;
     min-width: 500px;
     justify-content: space-evenly;
 }
-.nav_bar a{
+
+.nav_bar a {
     font-size: 14px;
     letter-spacing: .3px;
     color: #282c3f;
@@ -33,71 +37,95 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 30px 0;
-    border-bottom: 5px solid #ffffff;
-
+    border-bottom: 5px solid transparent;
 }
-.nav_bar a:hover{
+
+.nav_bar a:hover {
     border-bottom: 4px solid #f54e77;
 }
-.nav_bar a sup{
+
+.nav_bar a sup {
     color: #ff3f6c;
     font-size: 10px;
 }
-.search_bar{
+
+/* Search Bar */
+
+.search_bar {
     height: 40px;
     min-width: 200px;
     width: 30%;
     display: flex;
     align-items: center;
 }
-.search_icon{
+
+.search_icon {
     box-sizing: content-box;
     height: 20px;
-    padding: 20px;
-    background-color:#f5f5f6;
+    padding: 10px;
+    background-color: #f5f5f6;
     color: #282c3f;
     font-weight: 300;
     border-radius: 4px 0 0 4px;
 }
 
-.search_input{
-    color:  #696e79;
-    background-color:#f5f5f6;
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
     flex-grow: 1;
     height: 40px;
+    padding: 0 10px;
     border: 0;
-    border-radius: 0 4px 4px 0 ;
-
+    outline: none;
+    border-radius: 0 4px 4px 0;
 }
-.action_bar{
+
+/* Action Bar */
+
+.action_bar {
     display: flex;
     min-width: 200px;
+    margin-right: 4%;
     justify-content: space-evenly;
 }
-.action_container{
+
+.action_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.action_name {
+    font-size: 12px;
 }
-/* main section */
-.banner.container{
+
+/* Main Section */
+
+.banner_container {
     margin: 40px 0;
+    width: 100%;
 }
-.banner.image{
-    height: 10px;
-    width: 20px;
+
+.banner_container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
-.category_heading{
+
+/* Category Heading */
+
+.category_heading {
     text-transform: uppercase;
     color: #3e4152;
     letter-spacing: .15cm;
-    font-size: 1.8cm;
-    margin-top: 50px 0 10px 30px ;
+    font-size: 28px;
+    margin: 50px 0 10px 30px;
     max-height: 5em;
-    font-width: 700;
-
+    font-weight: 700;
 }
+
+/* Category Items */
+
 .category_items {
     display: flex;
     justify-content: space-evenly;
@@ -105,47 +133,58 @@
     flex-wrap: wrap;
 }
 
-.sale_items {
-    width: 250px;
-    height: auto;
-    display: block;
-}
-.category_items {
-    display: flex;
-    gap: 20px;
-}
+/* First Section Images */
 
 .sale_items {
     width: 250px;
     height: 300px;
+    display: block;
     object-fit: cover;
 }
-.footer_container{
-    padding: 30px 0px 40px 0px ;
+
+/* Second Section Images */
+
+.category_items img {
+    width: 250px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Footer */
+
+.footer_container {
+    padding: 30px 0px 40px 0px;
     background: #fafbfc;
     display: flex;
     justify-content: space-evenly;
-
 }
-.footer_column{
+
+.footer_column {
     display: flex;
     flex-direction: column;
 }
-.footer_column h3{
+
+.footer_column h3 {
     color: #282c3f;
     font-size: 14px;
     margin-bottom: 25px;
 }
-.footer_column a{
+
+.footer_column a {
     color: #696b79;
     display: block;
     font-size: 15px;
     text-decoration: none;
     padding-bottom: 5px;
-
 }
-.copyright{
-   color: #94969f;
-   text-align: end;
-   padding: 15px;
+
+.footer_column a:hover {
+    color: #ff3f6c;
+}
+
+.copyright {
+    color: #94969f;
+    text-align: center;
+    padding: 15px;
 }
